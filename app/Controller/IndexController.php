@@ -96,4 +96,13 @@ class IndexController extends AbstractController
 
         return $this->success($param);
     }
+
+    public function hello()
+    {
+        $data = [
+            'hello' => 'world'
+        ];
+
+        return $this->success($data);
+    }
 }
